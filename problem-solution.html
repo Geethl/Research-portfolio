@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Problem &amp; Solution | GAJA-SAVIYA</title>
+  <meta name="description" content="Understanding the human-elephant conflict context in rural Sri Lanka and how GAJA-SAVIYA responds through an open-data software pipeline and safer routing.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Shared Top Navigation Bar -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand" aria-label="GAJA-SAVIYA Home">
+        <img src="assets/logo.png" alt="GAJA-SAVIYA Logo" class="brand-logo">
+        <div class="brand-text">
+          <span class="brand-title">GAJA-SAVIYA</span>
+          <span class="brand-tag">Research Prototype</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="problem-solution.html" class="nav-link active">Problem &amp; Solution</a></li>
+          <li><a href="research-gap.html" class="nav-link">Research Gap</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobileNav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-nav" id="mobileNav">
+      <ul class="mobile-menu">
+        <li><a href="index.html" class="mobile-link">Home</a></li>
+        <li><a href="problem-solution.html" class="mobile-link active">Problem &amp; Solution</a></li>
+        <li><a href="research-gap.html" class="mobile-link">Research Gap</a></li>
+        <li><a href="about.html" class="mobile-link">About Us</a></li>
+        <li><a href="contact.html" class="mobile-link">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- Header Section -->
+    <section class="page-section intro-section">
+      <div class="container">
+        <div class="section-header fade-in-on-scroll">
+          <span class="section-tag">Context &amp; Architecture</span>
+          <h1 class="section-title">Problem &amp; Solution</h1>
+          <p class="section-subtitle">
+            How open geospatial data and transparent computational simulation can help commuters navigate conflict-prone rural corridors more safely.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Problem Section -->
+    <section class="page-section" style="padding-top: 0;">
+      <div class="container">
+        <article class="problem-card fade-in-on-scroll">
+          <span class="section-tag">The Challenge</span>
+          <h2 class="section-title text-left">The Problem in Rural Corridors</h2>
+          <p>
+            People travelling or working in conflict-prone rural areas may lack a timely, map-based view of where risk is elevated and which nearby roads may be affected by a moving elephant. Daily travel by school children, farmers, small traders, and rural commuters often intersects quiet forest fringes and agricultural paths where visibility can be limited.
+          </p>
+          <p>
+            In many rural areas, community information arrives only after an animal has entered a village, crossed a main thoroughfare, or caused crop damage. Word-of-mouth reports can be delayed or ambiguous, leaving road users with little time to take alternative routes.
+          </p>
+          <p>
+            Furthermore, static hotspot maps—which show historical incidents—do not account for an animal's changing estimated position, location uncertainty, or the effect on a specific route that a commuter needs to travel right now.
+          </p>
+        </article>
+
+        <!-- Research Question Card -->
+        <aside class="research-quote-card fade-in-on-scroll" aria-label="Core Research Question">
+          <span class="quote-label">Primary Research Question</span>
+          <blockquote>
+            &ldquo;How can open geospatial data and transparent simulation be integrated into a software-only framework that estimates HEC risk, tracks sparse simulated wildlife locations, classifies road exposure, and recommends safer local routes?&rdquo;
+          </blockquote>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Our Solution Section -->
+    <section class="page-section" style="background-color: #FFFFFF;">
+      <div class="container">
+        <div class="section-header fade-in-on-scroll">
+          <span class="section-tag">Software Framework</span>
+          <h2 class="section-title">Our Solution: The Four-Stage Pipeline</h2>
+          <p class="section-subtitle">
+            Rather than isolated models, GAJA-SAVIYA coordinates four software stages into one transparent decision pipeline.
+          </p>
+        </div>
+
+        <div class="grid grid-2">
+          <!-- Stage 1 -->
+          <div class="pipeline-card fade-in-on-scroll">
+            <div class="pipeline-header">
+              <span class="pipeline-number">Stage 1</span>
+              <h3>Spatial Risk Surface</h3>
+            </div>
+            <p>
+              Constructs a landscape-scale continuous surface of baseline conflict likelihood. It overlays elephant habitat suitability (vegetation cover, terrain, distance to water bodies) with human exposure factors (road networks, settlements, and agricultural land).
+            </p>
+            <div class="limitation-box">
+              <h5>Key limitation</h5>
+              <p>The risk surface is a proxy indicator of relative exposure, not a guaranteed prediction of wildlife presence or an encounter.</p>
+            </div>
+          </div>
+
+          <!-- Stage 2 -->
+          <div class="pipeline-card fade-in-on-scroll">
+            <div class="pipeline-header">
+              <span class="pipeline-number">Stage 2</span>
+              <h3>Sparse-Location Tracker</h3>
+            </div>
+            <p>
+              Simulates wildlife movement between sparse or intermittent sighting coordinates using an Extended Kalman Filter (EKF). The filter continuously updates both the estimated position and an expanding spatial uncertainty ellipse as time elapses without new updates.
+            </p>
+            <div class="limitation-box">
+              <h5>Key limitation</h5>
+              <p>Movement trajectories and playback are synthetic simulations with known ground truth for research validation, not live GPS collar telemetry.</p>
+            </div>
+          </div>
+
+          <!-- Stage 3 -->
+          <div class="pipeline-card fade-in-on-scroll">
+            <div class="pipeline-header">
+              <span class="pipeline-number">Stage 3</span>
+              <h3>Road-Risk Assessment</h3>
+            </div>
+            <p>
+              Dynamically evaluates road network edges within the vicinity of the estimated track. By intersecting the static spatial risk surface with the tracker's time-varying uncertainty region, road segments are assigned exposure categories and geofence events are raised.
+            </p>
+            <div class="limitation-box">
+              <h5>Key limitation</h5>
+              <p>Road risk scores reflect modelled potential exposure in the corridor, not confirmed physical presence of an elephant on the road surface.</p>
+            </div>
+          </div>
+
+          <!-- Stage 4 -->
+          <div class="pipeline-card fade-in-on-scroll">
+            <div class="pipeline-header">
+              <span class="pipeline-number">Stage 4</span>
+              <h3>Path Guard Routing</h3>
+            </div>
+            <p>
+              Evaluates the road graph to compare the standard shortest road distance with a risk-weighted route. Commuters can view comparative travel distances, active warning corridors, and choose lower-exposure detours on an intuitive map.
+            </p>
+            <div class="limitation-box">
+              <h5>Key limitation</h5>
+              <p>A safer route reduces modelled exposure along the journey, but cannot guarantee an elephant-free journey in wild environments.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aim and Objectives Section -->
+    <section class="page-section">
+      <div class="container">
+        <div class="section-header fade-in-on-scroll">
+          <span class="section-tag">Project Scope</span>
+          <h2 class="section-title">Aim and Objectives</h2>
+          <p class="section-subtitle">
+            Formal research roadmap formulated for the undergraduate capstone study.
+          </p>
+        </div>
+
+        <div class="summary-card fade-in-on-scroll" style="margin-bottom: 2rem;">
+          <h3 style="margin-bottom: 0.75rem;">Research Aim</h3>
+          <p>
+            The primary aim of GAJA-SAVIYA is to develop an open-data, software-only decision-support framework that models human-elephant conflict risk, estimates sparse simulated wildlife locations, dynamically evaluates roadway exposure, and recommends risk-averse travel routes in rural Sri Lanka without relying on proprietary tracking hardware or physical field interventions.
+          </p>
+        </div>
+
+        <ol class="objectives-list fade-in-on-scroll">
+          <li>
+            <div>
+              <strong>Objective 1: Synthesize Spatial Risk Surface</strong>
+              <p style="margin-top: 0.25rem; font-size: 0.95rem;">Combine open geospatial layers (OpenStreetMap, terrain, land cover, water sources) into a normalized, landscape-level baseline conflict risk model for rural test corridors.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Objective 2: Implement Sparse-Location EKF Tracker</strong>
+              <p style="margin-top: 0.25rem; font-size: 0.95rem;">Develop an Extended Kalman Filter motion model that estimates wildlife location and quantifies growing positional uncertainty between infrequent or delayed coordinates.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Objective 3: Construct Dynamic Road-Risk Scoring</strong>
+              <p style="margin-top: 0.25rem; font-size: 0.95rem;">Formulate a scoring algorithm that evaluates road segments by combining the static landscape risk surface with dynamic spatial uncertainty bounds.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Objective 4: Formulate Proximity Geofence Triggering</strong>
+              <p style="margin-top: 0.25rem; font-size: 0.95rem;">Generate proximity warnings and geofence alerts when simulated movements enter buffer corridors surrounding active transportation links.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Objective 5: Formulate Path Guard Risk-Penalized Routing</strong>
+              <p style="margin-top: 0.25rem; font-size: 0.95rem;">Design a graph-based routing algorithm that adds dynamic risk penalties to road edges, computing safer route detours compared to conventional shortest paths.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Objective 6: Implement and Evaluate User Interface Prototype</strong>
+              <p style="margin-top: 0.25rem; font-size: 0.95rem;">Build an accessible, mobile-responsive web interface that clearly communicates risk layers, route trade-offs, and simulation indicators to non-technical users.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Path Guard Routing Principle -->
+    <section class="page-section" style="background-color: #FFFFFF;">
+      <div class="container">
+        <div class="section-header fade-in-on-scroll">
+          <span class="section-tag">Routing Algorithm</span>
+          <h2 class="section-title">Path Guard Routing Idea</h2>
+          <p class="section-subtitle">
+            How graph theory helps commuters balance distance and travel risk.
+          </p>
+        </div>
+
+        <div class="formula-box fade-in-on-scroll">
+          <p>
+            In Path Guard, the surrounding road network is modelled as a weighted directed graph where road segments are edges and intersections are vertices. Under ordinary navigation, the routing algorithm chooses roads that minimise base travel distance or travel time:
+          </p>
+          <div class="math-display">
+            C'(e) = C(e) + R(e, t)
+          </div>
+          <p>
+            Here, <strong>C(e)</strong> represents the base physical cost (such as segment length in metres), while <strong>R(e, t)</strong> represents the dynamic risk penalty assigned to that road segment at time <em>t</em> based on the spatial risk surface and nearby tracking uncertainty. 
+          </p>
+          <p>
+            When Dijkstra's algorithm (or A*) searches for the least-cost path across the network, segments with elevated risk incur a heavy mathematical cost. The algorithm naturally discovers safer detour roads around active conflict areas, unless no viable alternative exists.
+          </p>
+          <div class="formula-disclaimer">
+            <strong>Important Clarification:</strong> This formula represents the algorithmic design principle and working hypothesis for Path Guard, not an empirically validated physical law. Penalty multipliers and sensitivity parameters are configurable simulation variables.
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo-wrap">
+            <img src="assets/logo.png" alt="GAJA-SAVIYA Logo" class="footer-logo-img">
+            <span class="footer-logo-text">GAJA-SAVIYA</span>
+          </a>
+          <p class="footer-desc">
+            An open-data, software-only early warning and safe-routing framework exploring peaceful human-elephant coexistence in rural Sri Lanka.
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-links-col">
+            <h4>Navigation</h4>
+            <ul class="footer-links-list">
+              <li><a href="index.html" class="footer-link">Home</a></li>
+              <li><a href="problem-solution.html" class="footer-link">Problem &amp; Solution</a></li>
+              <li><a href="research-gap.html" class="footer-link">Research Gap</a></li>
+              <li><a href="about.html" class="footer-link">About Us</a></li>
+              <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-col">
+            <h4>Institution</h4>
+            <ul class="footer-links-list">
+              <li><span class="footer-link" style="color: var(--text-heading); font-weight: 600;">Faculty of Computing</span></li>
+              <li><span class="footer-link">Department of Information Technology</span></li>
+              <li><span class="footer-link">SLIIT, Malabe, Sri Lanka</span></li>
+              <li><a href="mailto:gajasaviya@gmail.com" class="footer-link">gajasaviya@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 GAJA-SAVIYA Research Project &bull; SLIIT Undergraduate Research.</p>
+        <p>Built with open geospatial data for academic study.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
