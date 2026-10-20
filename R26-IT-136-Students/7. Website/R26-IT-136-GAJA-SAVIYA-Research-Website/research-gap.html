@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Gap | GAJA-SAVIYA</title>
+  <meta name="description" content="Discover the key research gaps in current human-elephant conflict solutions and how GAJA-SAVIYA addresses them through an open-data software approach.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Shared Top Navigation Bar -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand" aria-label="GAJA-SAVIYA Home">
+        <img src="assets/logo.png" alt="GAJA-SAVIYA Logo" class="brand-logo">
+        <div class="brand-text">
+          <span class="brand-title">GAJA-SAVIYA</span>
+          <span class="brand-tag">Research Prototype</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="problem-solution.html" class="nav-link">Problem &amp; Solution</a></li>
+          <li><a href="research-gap.html" class="nav-link active">Research Gap</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobileNav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-nav" id="mobileNav">
+      <ul class="mobile-menu">
+        <li><a href="index.html" class="mobile-link">Home</a></li>
+        <li><a href="problem-solution.html" class="mobile-link">Problem &amp; Solution</a></li>
+        <li><a href="research-gap.html" class="mobile-link active">Research Gap</a></li>
+        <li><a href="about.html" class="mobile-link">About Us</a></li>
+        <li><a href="contact.html" class="mobile-link">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- Header Section -->
+    <section class="page-section intro-section">
+      <div class="container">
+        <div class="section-header fade-in-on-scroll">
+          <span class="section-tag">Scientific Motivation</span>
+          <h1 class="section-title">Research Gaps &amp; Our Response</h1>
+          <p class="section-subtitle">
+            Bridging the divide between static wildlife maps, sparse field observations, and everyday commuter travel decisions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Four Research Gap Cards -->
+    <section class="page-section" style="padding-top: 0;">
+      <div class="container">
+        <div class="grid grid-2">
+          
+          <!-- Gap Card 1 -->
+          <article class="gap-card fade-in-on-scroll">
+            <h3 style="color: var(--text-heading); font-size: 1.25rem;">1. Static Hotspot Maps vs. Dynamic Movement</h3>
+            
+            <div class="gap-missing">
+              <h4>What is missing today</h4>
+              <p>
+                Existing conflict maps are predominantly static historical summaries. They show where past incidents or crop encounters have occurred over previous months or years, but cannot account for an animal's changing estimated position or growing spatial uncertainty over time.
+              </p>
+            </div>
+
+            <div class="gap-response">
+              <h4>How GAJA-SAVIYA responds</h4>
+              <p>
+                Components 2 and 3 introduce a time-varying position estimate and growing uncertainty region between sparse sightings, enabling dynamic road evaluations that adapt as time passes.
+              </p>
+            </div>
+          </article>
+
+          <!-- Gap Card 2 -->
+          <article class="gap-card fade-in-on-scroll">
+            <div class="gap-missing" style="display:none;"></div> <!-- semantic balance -->
+            <h3 style="color: var(--text-heading); font-size: 1.25rem;">2. Restricted Access to Live Tracking Data</h3>
+            
+            <div class="gap-missing">
+              <h4>What is missing today</h4>
+              <p>
+                Physical GPS collar telemetry is costly, logistically difficult to maintain in harsh jungle conditions, and understandably restricted for undergraduate research teams due to wildlife safety and licensing constraints.
+              </p>
+            </div>
+
+            <div class="gap-response">
+              <h4>How GAJA-SAVIYA responds</h4>
+              <p>
+                A software-only approach using public data and clearly labelled synthetic trajectories with known ground truth, enabling reproducible and accessible algorithmic experimentation without capturing or collaring animals.
+              </p>
+            </div>
+          </article>
+
+          <!-- Gap Card 3 -->
+          <article class="gap-card fade-in-on-scroll">
+            <h3 style="color: var(--text-heading); font-size: 1.25rem;">3. Fragmented, Disconnected Models</h3>
+            
+            <div class="gap-missing">
+              <h4>What is missing today</h4>
+              <p>
+                In academic literature, habitat suitability models, wildlife motion tracking filters, and roadway route planners are commonly treated as isolated, separate systems without a unified data pipeline.
+              </p>
+            </div>
+
+            <div class="gap-response">
+              <h4>How GAJA-SAVIYA responds</h4>
+              <p>
+                One integrated four-stage pipeline connecting landscape risk estimation, motion tracking, roadway classification, and route decision support into a cohesive software architecture.
+              </p>
+            </div>
+          </article>
+
+          <!-- Gap Card 4 -->
+          <article class="gap-card fade-in-on-scroll">
+            <h3 style="color: var(--text-heading); font-size: 1.25rem;">4. Risk Shown but Not Translated into Safe Action</h3>
+            
+            <div class="gap-missing">
+              <h4>What is missing today</h4>
+              <p>
+                Conventional map interfaces often highlight danger zones or hotspot buffers, but leave the traveller without clear guidance on how to navigate around the hazard or how much detour time is required.
+              </p>
+            </div>
+
+            <div class="gap-response">
+              <h4>How GAJA-SAVIYA responds</h4>
+              <p>
+                Path Guard translates raw risk into practical action by presenting a side-by-side comparison of the ordinary shortest route versus a risk-weighted safer route, showing the exact distance trade-off and active threat areas.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Formal Evaluation Plan Table -->
+    <section class="page-section" style="background-color: #FFFFFF;">
+      <div class="container">
+        <div class="section-header fade-in-on-scroll">
+          <span class="section-tag">Methodology</span>
+          <h2 class="section-title">Evaluation Plan</h2>
+          <p class="section-subtitle">
+            Structured experimental protocols designed to assess each component against simulated ground truth.
+          </p>
+        </div>
+
+        <div class="table-card fade-in-on-scroll">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th scope="col" style="width: 25%;">Component</th>
+                <th scope="col" style="width: 35%;">How we will evaluate</th>
+                <th scope="col" style="width: 40%;">Measures &amp; Metrics</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="table-tag">1. Spatial Risk Surface</span>
+                </td>
+                <td>Spatial cross-validation against held-out validation points.</td>
+                <td>ROC-AUC, Precision-Recall, spatial agreement indices, and relative factor importance.</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="table-tag">2. EKF Tracking</span>
+                </td>
+                <td>Compare estimated coordinates against hidden synthetic trajectory ground truth.</td>
+                <td>Root Mean Squared Error (RMSE) in metres, covariance uncertainty ellipse coverage percentage.</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="table-tag">3. Road-Risk Assessment</span>
+                </td>
+                <td>Compare road classifications against simulated dynamic risk corridor ground truth.</td>
+                <td>True/false risky road segments, missed-risk segments, classification sensitivity.</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="table-tag">4. Path Guard Routing</span>
+                </td>
+                <td>Compare conventional shortest paths against risk-weighted routes across diverse simulated scenarios.</td>
+                <td>Added travel distance (km), share of path through high-risk areas (%), calculation latency (ms).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Academic Disclaimer -->
+        <aside class="disclaimer-banner fade-in-on-scroll" style="margin-top: 2rem;">
+          <svg class="disclaimer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="8" x2="12" y2="12"></line>
+            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+          </svg>
+          <div class="disclaimer-content">
+            <h4>Experimental Status Note</h4>
+            <p>
+              No empirical results are claimed yet. Results will be added after experiments are completed. This table outlines the intended evaluation methodology for the research framework.
+            </p>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo-wrap">
+            <img src="assets/logo.png" alt="GAJA-SAVIYA Logo" class="footer-logo-img">
+            <span class="footer-logo-text">GAJA-SAVIYA</span>
+          </a>
+          <p class="footer-desc">
+            An open-data, software-only early warning and safe-routing framework exploring peaceful human-elephant coexistence in rural Sri Lanka.
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-links-col">
+            <h4>Navigation</h4>
+            <ul class="footer-links-list">
+              <li><a href="index.html" class="footer-link">Home</a></li>
+              <li><a href="problem-solution.html" class="footer-link">Problem &amp; Solution</a></li>
+              <li><a href="research-gap.html" class="footer-link">Research Gap</a></li>
+              <li><a href="about.html" class="footer-link">About Us</a></li>
+              <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-col">
+            <h4>Institution</h4>
+            <ul class="footer-links-list">
+              <li><span class="footer-link" style="color: var(--text-heading); font-weight: 600;">Faculty of Computing</span></li>
+              <li><span class="footer-link">Department of Information Technology</span></li>
+              <li><span class="footer-link">SLIIT, Malabe, Sri Lanka</span></li>
+              <li><a href="mailto:gajasaviya@gmail.com" class="footer-link">gajasaviya@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 GAJA-SAVIYA Research Project &bull; SLIIT Undergraduate Research.</p>
+        <p>Built with open geospatial data for academic study.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

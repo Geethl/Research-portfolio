@@ -1,0 +1,1 @@
+* Follow the instructions given during the "website assessment lecture".

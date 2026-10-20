@@ -19,6 +19,7 @@ This repository contains the interactive research portfolio web application:
 - **Problem & Solution (`problem-solution.html`)** — Deep-dive into Sri Lanka's HEC dynamics and our technological framework.
 - **Research Gap (`research-gap.html`)** — Comparison matrix and critical gaps addressed in wildlife tracking literature.
 - **About Us (`about.html`)** — Research team members and academic supervisors from the SLIIT Faculty of Computing.
+- **Documents (`documents.html`)** — Research proposals, progress presentations, draft theses, and checklists.
 - **Contact Us (`contact.html`)** — Collaboration inquiries and research contact channels.
 
 ---

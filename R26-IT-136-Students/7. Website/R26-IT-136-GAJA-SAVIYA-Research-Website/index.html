@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAJA-SAVIYA | Safe Routing & Early Warning Framework for Human-Elephant Conflict</title>
+  <meta name="description" content="An open-data, software-only early warning and safe-routing framework for human-elephant conflict in rural Sri Lanka. Helping people and elephants share the road more safely.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Shared Top Navigation Bar -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand" aria-label="GAJA-SAVIYA Home">
+        <img src="assets/logo.png" alt="GAJA-SAVIYA Logo" class="brand-logo">
+        <div class="brand-text">
+          <span class="brand-title">GAJA-SAVIYA</span>
+          <span class="brand-tag">Research Prototype</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="problem-solution.html" class="nav-link">Problem &amp; Solution</a></li>
+          <li><a href="research-gap.html" class="nav-link">Research Gap</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobileNav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-nav" id="mobileNav">
+      <ul class="mobile-menu">
+        <li><a href="index.html" class="mobile-link active">Home</a></li>
+        <li><a href="problem-solution.html" class="mobile-link">Problem &amp; Solution</a></li>
+        <li><a href="research-gap.html" class="mobile-link">Research Gap</a></li>
+        <li><a href="about.html" class="mobile-link">About Us</a></li>
+        <li><a href="contact.html" class="mobile-link">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Page Content -->
+  <main id="mainContent">
+
+    <!-- Hero Section -->
+    <section class="hero fade-in-on-scroll">
+      <div class="container hero-content">
+        <img src="assets/logo.png" alt="GAJA-SAVIYA Logo Emblem" class="hero-logo-img">
+        <h1 class="hero-title">GAJA-SAVIYA</h1>
+        <p class="hero-subtitle">
+          An Open-Data, Software-Only Early Warning and Safe-Routing Framework for Human-Elephant Conflict in Rural Sri Lanka
+        </p>
+        <span class="hero-tagline">Helping people and elephants share the road more safely.</span>
+        
+        <div class="hero-actions">
+          <a href="problem-solution.html" class="btn btn-primary" id="heroBtnProblem">
+            <span>Read the Problem</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="contact.html" class="btn btn-secondary" id="heroBtnContact">
+            <span>Contact Us</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- What is GAJA-SAVIYA Section -->
+    <section class="page-section intro-section">
+      <div class="container">
+        <div class="summary-card fade-in-on-scroll">
+          <span class="section-tag">Overview</span>
+          <h2 class="section-title text-left">What is GAJA-SAVIYA?</h2>
+          <p>
+            Human-elephant conflict is a continuing challenge in rural Sri Lanka where natural wildlife corridors, seasonal farmlands, local roadways, and village settlements closely overlap. 
+            GAJA-SAVIYA is an academic research prototype that transforms estimated spatial conflict risk into clear map alerts and proactive, safer route alternatives. 
+            Built entirely on open geospatial data and transparent simulation methods, the framework aims to provide community road users with calm, actionable visibility while fully respecting wildlife protection principles.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Four Components -->
+    <section class="page-section">
+      <div class="container">
+        <div class="section-header fade-in-on-scroll">
+          <span class="section-tag">Architecture</span>
+          <h2 class="section-title">The Four Components</h2>
+          <p class="section-subtitle">
+            An integrated four-stage pipeline designed to translate raw geospatial signals into safer journeys.
+          </p>
+        </div>
+
+        <div class="grid grid-4">
+          <!-- Component 1 -->
+          <article class="card component-card fade-in-on-scroll" id="compCard1">
+            <div class="component-badge" aria-hidden="true">1</div>
+            <h3 class="component-title">Spatial Risk Surface</h3>
+            <p class="component-desc">
+              Estimates relative conflict risk across the landscape by combining elephant habitat suitability with human exposure layers such as roads, settlements, and crop lands.
+            </p>
+          </article>
+
+          <!-- Component 2 -->
+          <article class="card component-card fade-in-on-scroll" id="compCard2">
+            <div class="component-badge" aria-hidden="true">2</div>
+            <h3 class="component-title">Sparse-Location Tracker</h3>
+            <p class="component-desc">
+              Uses an Extended Kalman Filter (EKF) to estimate an elephant's continuous movement trajectory and associated spatial uncertainty between infrequent or delayed location updates.
+            </p>
+          </article>
+
+          <!-- Component 3 -->
+          <article class="card component-card fade-in-on-scroll" id="compCard3">
+            <div class="component-badge" aria-hidden="true">3</div>
+            <h3 class="component-title">Road-Risk Assessment</h3>
+            <p class="component-desc">
+              Scores surrounding road segments in real-time by intersecting the baseline risk surface with the tracker's dynamic uncertainty region, triggering automated geofence events.
+            </p>
+          </article>
+
+          <!-- Component 4 -->
+          <article class="card component-card fade-in-on-scroll" id="compCard4">
+            <div class="component-badge" aria-hidden="true">4</div>
+            <h3 class="component-title">Path Guard</h3>
+            <p class="component-desc">
+              Provides an intuitive interactive map interface that computes and compares the ordinary shortest road route with a risk-weighted safer route, highlighting active warnings.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Flow -->
+    <section class="page-section" style="background-color: #FFFFFF;">
+      <div class="container">
+        <div class="section-header fade-in-on-scroll">
+          <span class="section-tag">Workflow</span>
+          <h2 class="section-title">How It Works</h2>
+          <p class="section-subtitle">
+            From open geospatial data to safer road recommendations in four coordinated steps.
+          </p>
+        </div>
+
+        <div class="flow-container fade-in-on-scroll">
+          <div class="flow-step">
+            <div class="flow-index">1</div>
+            <h3 class="flow-title">Estimate Risk</h3>
+            <p class="flow-text">Synthesize open habitat and community exposure data into a continuous spatial risk surface.</p>
+          </div>
+
+          <div class="flow-arrow" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-index">2</div>
+            <h3 class="flow-title">Track Movement</h3>
+            <p class="flow-text">Estimate animal position and growing uncertainty ellipses between sparse observations using EKF.</p>
+          </div>
+
+          <div class="flow-arrow" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-index">3</div>
+            <h3 class="flow-title">Score Roads</h3>
+            <p class="flow-text">Classify nearby road edges according to exposure scores and dynamic proximity corridors.</p>
+          </div>
+
+          <div class="flow-arrow" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-index">4</div>
+            <h3 class="flow-title">Safer Route</h3>
+            <p class="flow-text">Calculate risk-penalized routes so travellers can make calm, informed routing decisions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Honest-Labelling Banner & Tech Stack -->
+    <section class="page-section">
+      <div class="container">
+        <!-- Research Disclaimer Banner -->
+        <aside class="disclaimer-banner fade-in-on-scroll" aria-label="Research Disclaimer">
+          <svg class="disclaimer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="8" x2="12" y2="12"></line>
+            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+          </svg>
+          <div class="disclaimer-content">
+            <h4>Academic Research Prototype Notice</h4>
+            <p>
+              This is a research prototype. Movement playback is synthetic and clearly labelled. It is not an official public warning service and does not replace the Department of Wildlife Conservation (DWC) or local emergency authorities.
+            </p>
+          </div>
+        </aside>
+
+        <!-- Technology Stack Chips -->
+        <div class="tech-section fade-in-on-scroll">
+          <span class="section-tag">Framework Technologies</span>
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Tools &amp; Open Standards Used</h3>
+          <div class="tech-chips">
+            <span class="tech-chip">OpenStreetMap</span>
+            <span class="tech-chip">Python (EKF simulation)</span>
+            <span class="tech-chip">Node.js / Express</span>
+            <span class="tech-chip">MongoDB (GeoJSON)</span>
+            <span class="tech-chip">Next.js / React</span>
+            <span class="tech-chip">Leaflet</span>
+            <span class="tech-chip">Socket.IO</span>
+            <span class="tech-chip">Expo / React Native</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo-wrap">
+            <img src="assets/logo.png" alt="GAJA-SAVIYA Logo" class="footer-logo-img">
+            <span class="footer-logo-text">GAJA-SAVIYA</span>
+          </a>
+          <p class="footer-desc">
+            An open-data, software-only early warning and safe-routing framework exploring peaceful human-elephant coexistence in rural Sri Lanka.
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-links-col">
+            <h4>Navigation</h4>
+            <ul class="footer-links-list">
+              <li><a href="index.html" class="footer-link">Home</a></li>
+              <li><a href="problem-solution.html" class="footer-link">Problem &amp; Solution</a></li>
+              <li><a href="research-gap.html" class="footer-link">Research Gap</a></li>
+              <li><a href="about.html" class="footer-link">About Us</a></li>
+              <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-col">
+            <h4>Institution</h4>
+            <ul class="footer-links-list">
+              <li><span class="footer-link" style="color: var(--text-heading); font-weight: 600;">Faculty of Computing</span></li>
+              <li><span class="footer-link">Department of Information Technology</span></li>
+              <li><span class="footer-link">SLIIT, Malabe, Sri Lanka</span></li>
+              <li><a href="mailto:gajasaviya@gmail.com" class="footer-link">gajasaviya@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 GAJA-SAVIYA Research Project &bull; SLIIT Undergraduate Research.</p>
+        <p>Built with open geospatial data for academic study.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | GAJA-SAVIYA Research Project</title>
+  <meta name="description" content="Get in touch with the GAJA-SAVIYA research team for inquiries, academic feedback, or collaboration regarding human-elephant conflict safe-routing in Sri Lanka.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Shared Top Navigation Bar -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand" aria-label="GAJA-SAVIYA Home">
+        <img src="assets/logo.png" alt="GAJA-SAVIYA Logo" class="brand-logo">
+        <div class="brand-text">
+          <span class="brand-title">GAJA-SAVIYA</span>
+          <span class="brand-tag">Research Prototype</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="problem-solution.html" class="nav-link">Problem &amp; Solution</a></li>
+          <li><a href="research-gap.html" class="nav-link">Research Gap</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobileNav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-nav" id="mobileNav">
+      <ul class="mobile-menu">
+        <li><a href="index.html" class="mobile-link">Home</a></li>
+        <li><a href="problem-solution.html" class="mobile-link">Problem &amp; Solution</a></li>
+        <li><a href="research-gap.html" class="mobile-link">Research Gap</a></li>
+        <li><a href="about.html" class="mobile-link">About Us</a></li>
+        <li><a href="contact.html" class="mobile-link active">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- Header Section -->
+    <section class="page-section intro-section">
+      <div class="container">
+        <div class="section-header fade-in-on-scroll">
+          <span class="section-tag">Reach Out</span>
+          <h1 class="section-title">Get in touch</h1>
+          <p class="section-subtitle">
+            Questions, feedback or want to collaborate? We'd love to hear from you.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Grid -->
+    <section class="page-section" style="padding-top: 0;">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <!-- Left: Contact Details Card -->
+          <div class="contact-info-card fade-in-on-scroll">
+            <div class="info-item">
+              <span class="info-label">Direct Project Email</span>
+              <a href="mailto:gajasaviya@gmail.com" class="info-val-highlight" style="color: var(--accent);">gajasaviya@gmail.com</a>
+              <button type="button" class="copy-btn" id="copyEmailBtn" aria-label="Copy email address">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span>Copy email</span>
+              </button>
+            </div>
+
+            <div class="info-item">
+              <span class="info-label">Research Institution</span>
+              <p style="font-size: 1.05rem; font-weight: 600; color: var(--text-heading); margin-bottom: 0.25rem;">
+                Sri Lanka Institute of Information Technology (SLIIT)
+              </p>
+              <p style="font-size: 0.95rem; color: var(--text-body); margin-bottom: 0.2rem;">
+                Faculty of Computing &bull; Department of Information Technology
+              </p>
+              <p style="font-size: 0.92rem; color: var(--text-muted);">
+                New Kandy Road, Malabe, Sri Lanka
+              </p>
+            </div>
+
+            <div class="info-item">
+              <span class="info-label">Research Supervisors</span>
+              <div style="margin-top: 0.4rem;">
+                <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">
+                  <strong>Kaushalya Dissanayake:</strong><br>
+                  <a href="mailto:Kaushalya.di@sliit.lk" style="font-size: 0.9rem;">Kaushalya.di@sliit.lk</a>
+                </p>
+                <p style="margin-bottom: 0; font-size: 0.95rem;">
+                  <strong>Suriyaa Kumari:</strong><br>
+                  <a href="mailto:Suriyaa.k@sliit.lk" style="font-size: 0.9rem;">Suriyaa.k@sliit.lk</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-card fade-in-on-scroll">
+            <h2 style="font-size: 1.35rem; margin-bottom: 1.25rem;">Send a message</h2>
+            <form id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="nameInput" class="form-label">Your Name</label>
+                <input type="text" id="nameInput" class="form-control" placeholder="e.g. Kasun Perera" required>
+              </div>
+
+              <div class="form-group">
+                <label for="emailInput" class="form-label">Your Email</label>
+                <input type="email" id="emailInput" class="form-control" placeholder="e.g. name@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subjectInput" class="form-label">Subject</label>
+                <input type="text" id="subjectInput" class="form-control" placeholder="e.g. Research Inquiry / Collaboration Feedback" required>
+              </div>
+
+              <div class="form-group">
+                <label for="messageInput" class="form-label">Message</label>
+                <textarea id="messageInput" class="form-control" placeholder="Write your message or inquiry here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;" id="submitFormBtn">
+                <span>Send via Email</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+
+              <div id="formFeedback" class="form-feedback" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo-wrap">
+            <img src="assets/logo.png" alt="GAJA-SAVIYA Logo" class="footer-logo-img">
+            <span class="footer-logo-text">GAJA-SAVIYA</span>
+          </a>
+          <p class="footer-desc">
+            An open-data, software-only early warning and safe-routing framework exploring peaceful human-elephant coexistence in rural Sri Lanka.
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-links-col">
+            <h4>Navigation</h4>
+            <ul class="footer-links-list">
+              <li><a href="index.html" class="footer-link">Home</a></li>
+              <li><a href="problem-solution.html" class="footer-link">Problem &amp; Solution</a></li>
+              <li><a href="research-gap.html" class="footer-link">Research Gap</a></li>
+              <li><a href="about.html" class="footer-link">About Us</a></li>
+              <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-col">
+            <h4>Institution</h4>
+            <ul class="footer-links-list">
+              <li><span class="footer-link" style="color: var(--text-heading); font-weight: 600;">Faculty of Computing</span></li>
+              <li><span class="footer-link">Department of Information Technology</span></li>
+              <li><span class="footer-link">SLIIT, Malabe, Sri Lanka</span></li>
+              <li><a href="mailto:gajasaviya@gmail.com" class="footer-link">gajasaviya@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 GAJA-SAVIYA Research Project &bull; SLIIT Undergraduate Research.</p>
+        <p>Built with open geospatial data for academic study.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
